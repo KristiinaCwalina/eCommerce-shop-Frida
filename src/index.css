@@ -117,7 +117,7 @@ body {
   cursor: pointer;
 }
 .side-menu ul li:hover {
-  color: #d9238a;
+  color: black;
 }
 .side-menu ul li ul {
   display: none;

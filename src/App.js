@@ -31,9 +31,7 @@ function App() {
                 <i className="fa fa-shopping-cart"></i>Cart
               </a>
             </li>
-            <li>
-              <a href="#">Sign Up</a>
-            </li>
+
             <li>
               <a href="#">Log In</a>
             </li>
@@ -44,141 +42,21 @@ function App() {
       <section className="header">
         <div className="side-menu" id="side-menu">
           <ul>
-            <li>
-              On Sale<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -1</li>
-                <li>Sub Menu -1</li>
-                <li>Sub Menu -1</li>
-                <li>Sub Menu -1</li>
-              </ul>
-            </li>
-            <li>
-              Clothing<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Accessories<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -3</li>
-                <li>Sub Menu -3</li>
-                <li>Sub Menu -3</li>
-                <li>Sub Menu -3</li>
-              </ul>
-            </li>
-            <li>
-              Home and Living<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Stationery<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Books, Films and Music<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Art and Collectibles<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Electronics<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Jewelry<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Bags and Purses<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Bath and Beauty<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Weddings<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Toys and Games<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Shoes<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
-            <li>
-              Pet Supplies<i className="fa fa-angle-right"></i>
-              <ul>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-                <li>Sub Menu -2</li>
-              </ul>
-            </li>
+            <li>On Sale</li>
+            <li>Clothing</li>
+            <li>Accessories</li>
+            <li>Home and Living</li>
+            <li>Stationery</li>
+            <li>Books, Films and Music</li>
+            <li>Art and Collectibles</li>
+            <li>Electronics</li>
+            <li>Jewelry</li>
+            <li>Bags and Purses</li>
+            <li>Bath and Beauty</li>
+            <li>Weddings</li>
+            <li>Toys and Games</li>
+            <li>Shoes</li>
+            <li>Pet Supplies</li>
           </ul>
         </div>
 
@@ -561,7 +439,7 @@ function App() {
           </div>
         </div>
       </section>
-     
+
       <section className="footer">
         <div className="container text-center">
           <div className="row"></div>
