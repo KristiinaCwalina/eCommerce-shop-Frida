@@ -104,10 +104,11 @@ body {
   font-size: 14px;
   float: left;
   z-index: 2;
-  background-color: #f5e6f5;
+  background-color: #d9238a;
 }
 .side-menu ul {
   margin-left: 10px;
+  color: #fff;
 }
 .side-menu ul li {
   list-style-type: none;

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Clothing<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -64,7 +64,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Cups<i className="fa fa-angle-right"></i>
+          Home and Living<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -73,7 +73,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Stationary<i className="fa fa-angle-right"></i>
+          Stationery<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -82,7 +82,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Books<i className="fa fa-angle-right"></i>
+          Books, Films and Music<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -91,7 +91,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Home<i className="fa fa-angle-right"></i>
+          Art and Collectibles<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -100,7 +100,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Phones<i className="fa fa-angle-right"></i>
+          Electronics<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -109,7 +109,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Tops<i className="fa fa-angle-right"></i>
+          Jewelry<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -118,7 +118,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Bags and Purses<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -127,7 +127,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Bath and Beauty<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -136,7 +136,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Weddings<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -145,7 +145,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Toys and Games<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -154,7 +154,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Shoes<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -163,7 +163,7 @@ function App() {
           </ul>
         </li>
         <li>
-          Clothes<i className="fa fa-angle-right"></i>
+          Pet Supplies<i className="fa fa-angle-right"></i>
           <ul>
             <li>Sub Menu -2</li>
             <li>Sub Menu -2</li>
@@ -182,7 +182,7 @@ function App() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/images/frida1.png" className="d-block w-100" alt="..." />
+            <img src="/images/frida5.png" className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src="/images/frida2.png" className="d-block w-100" alt="..." />
@@ -211,7 +211,7 @@ function App() {
           <img src="/images/frida1.png" />
         </div>
         <div className="col-md-4">
-          <img src="/images/frida2.png" />
+          <img src="/images/frida6.png" />
         </div>
         <div className="col-md-4">
           <img src="/images/frida3.png" />
