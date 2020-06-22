@@ -199,6 +199,8 @@ body {
 .featured-categories img {
   width: 100%;
   padding: 20px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   transition: 1s;
   cursor: pointer;
   overflow: hidden;

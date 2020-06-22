@@ -79,6 +79,141 @@ export default {
         image: "/images/frida13.png",
         discount: 0,
         category: "Home and Living"
+    },
+    {
+        id:10,
+        name: "Frida Cookie Cutter",
+        price: 7.41,
+        description: "All cutters are designed by professional 3D and graphic designer with 4+ experience in 3D printing. We pay close attention to every detail of the cutter. All the cutters are firm and durable.",
+        image: "/images/frida14.png",
+        discount: 20,
+        category: "Home and Living"
+    },
+    {
+        id:11,
+        name: "Frida Kahlo Antique Brass Bookmark",
+        price: 11.16,
+        description: "This bookmark is made of antique brass. The glass cab magnifies the image and is about an inch in diameter. Although the image is sealed under glass, getting it wet may ruin it. Bookmarks come on a decorative card.",
+        image: "/images/frida15.png",
+        discount: 0,
+        category: "Books and Notebooks"
+    },
+    {
+        id:12,
+        name: "White 'Frida Fowers' Graphic Tee",
+        price: 13.85,
+        description: "Classic short sleeve t-shirt with 'Frida Flowers' graphic printed at the front. Crafted from pure cotton with a relaxed fit and topped with a ribbed crew neck.",
+        image: "/images/frida16.png",
+        discount: 0,
+        category: "Clothing"
+    },
+    {
+        id:13,
+        name: "Frida Kahlo AirPod Case",
+        price: 10.51,
+        description: "Airpods cases are available in Hard Plastic or Soft Silicone (TPU) versions. Fits your AirPods perfectly, covers all sides. All ports open for easy access.",
+        image: "/images/frida17.png",
+        discount: 15,
+        category: "Electronics"
+    },
+    {
+        id:14,
+        name: "iPhone Case",
+        price: 9.67,
+        description: "All our products are made handmade with best wishes to their future owners. If you like to be unique, you will surely find something special for yourself, something that will express your individuality. Want your phone be covered and protected with stylish design? Don't waste time and choose a handmade Case in my Shop and be sure your device will be perfectly protected and look stunning!",
+        image: "/images/frida18.png",
+        discount: 20,
+        category: "Electronics"
+    },
+    {
+        id:15,
+        name: "Laptop Sleeve 'Frida'",
+        price: 23.00,
+        description: "Protect your laptop in style—get this snug, lightweight laptop sleeve! To prevent any scratch marks, it contains an internal padded zipper and its interior is fully lined with faux fur. What’s more, it’s made from a material that’s resistant to water, oil, and heat, making sure your laptop sleeve looks as sharp as you any day of the week!",
+        image: "/images/frida19.png",
+        discount: 0,
+        category: "Electronics"
+    },
+    {
+        id:16,
+        name: "Frida colorful coin purse",
+        price: 10.43,
+        description: "Very brightly coloured images of a Tropical Frida Kahlo inspired print, surrounded by brightly coloured butterflies, toucans and flowers, alongside some small portraits of frida. This is printed on quite a thick cotton, very high quality finish. Each purse will have a Frida face on the front, complete with small carrying handle and a red zip.",
+        image: "/images/frida20.png",
+        discount: 0,
+        category: "Bags and Purses"
+    },
+    {
+        id:17,
+        name: "Frida Kahlo Women's wallet",
+        price: 47.48,
+        description: "Colorful and cute handmade fabric wallet! This wallet is the perfect gift for someone special or for yourself! The purse is really spacious it can even fit a smartphone between the zipper pockets.",
+        image: "/images/frida21.png",
+        discount: 0,
+        category: "Bags and Purses"
+    },
+    {
+        id:18,
+        name: "iPhone Case",
+        price: 18.33,
+        description: "This sleek iPhone case protects your phone from scratches, dust, oil, and dirt. It has a solid back and flexible sides that make it easy to take on and off, with precisely aligned port openings.",
+        image: "/images/frida22.png",
+        discount: 0,
+        category: "Electronics"
+    },
+    {
+        id:19,
+        name: "Grand Frida Kahlo tote bag",
+        price: 22.49,
+        description: "Get rid of all the plastic and pack your goodies in this spacious organic cotton tote bag. Fill it up with groceries, books, and travel essentials—there’s room for everything!",
+        image: "/images/frida23.png",
+        discount: 10,
+        category: "Electronics"
+    },
+    {
+        id:20,
+        name: "Mexican huarache sandals",
+        price: 45.12,
+        description: "Beautiful Huarache Sandal, very comfy and unique style. Made in Mexico. Material: Leather. Heel material: synthetic insole. Huaraches are not made in half sizes, The reason is they're made out of leather and will stretch out and mold your feet.",
+        image: "/images/frida24.png",
+        discount: 0,
+        category: "Shoes"
+    },
+    {
+        id:21,
+        name: "Frida Kahlo high top shoes",
+        price: 74.42,
+        description: "Beautiful custom made high tops shoes with image of Frida Kahlo on each side.",
+        image: "/images/frida25.png",
+        discount: 0,
+        category: "Shoes"
+    },
+    {
+        id:22,
+        name: "Frida Kahlo vintage photo print",
+        price: 11.07,
+        description: "A beautiful vintage photograph of Frida Kahlo. Unique retro wall decor to grace every room. All photos are printed in high quality photo paper and the frame is a simple black one.",
+        image: "/images/frida26.png",
+        discount: 0,
+        category: "Art and Collectibles"
+    },
+    {
+        id:23,
+        name: "Journal 'Viva la Vida'",
+        price: 12.09,
+        description: "Shopping lists, school notes or poems - 118 page spiral notebook with ruled line paper is a perfect companion in everyday life. Durable printed cover makes owner proud to carry it everywhere.",
+        image: "/images/frida27.png",
+        discount: 0,
+        category: "Books and Notebooks"
+    },
+    {
+        id:24,
+        name: "Agenda 2020",
+        price: 12.55,
+        description: "Hardcover Agenda notebook for 2020.",
+        image: "/images/frida1.png",
+        discount: 0,
+        category: "Books and Notebooks"
     }
 ]
 }

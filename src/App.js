@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import data from "./data";
 
 function App() {
   const openmenu = () => {
@@ -47,7 +48,7 @@ function App() {
             <li>Accessories</li>
             <li>Home and Living</li>
             <li>Stationery</li>
-            <li>Books, Films and Music</li>
+            <li>Books and Notebooks</li>
             <li>Art and Collectibles</li>
             <li>Electronics</li>
             <li>Jewelry</li>
@@ -90,7 +91,7 @@ function App() {
               </div>
               <div className="carousel-item">
                 <img
-                  src="/images/frida4.png"
+                  src="/images/frida15.png"
                   className="d-block w-100"
                   alt="..."
                 />
@@ -121,6 +122,20 @@ function App() {
             </div>
             <div className="col-md-4">
               <img src="/images/frida3.png" />
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <img src="/images/frida22.png" />
+            </div>
+            <div className="col-md-4">
+              <img src="/images/frida19.png" />
+            </div>
+            <div className="col-md-4">
+              <img src="/images/frida23.png" />
             </div>
           </div>
         </div>
@@ -170,7 +185,7 @@ function App() {
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida11.png" />
+                <img src="/images/frida14.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -201,13 +216,13 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <h3>Frida Kahlo Doll</h3>
-                <h5>$54.88</h5>
+                <h3>Frida Cookie Cutter</h3>
+                <h5>$7.41</h5>
               </div>
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida13.png" />
+                <img src="/images/frida17.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -238,13 +253,13 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star-o"></i>
-                <h3>Frida Kahlo Fabric</h3>
-                <h5>$4.16</h5>
+                <h3> Frida AirPod Case</h3>
+                <h5>$10.51</h5>
               </div>
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida2.png" />
+                <img src="/images/frida25.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -275,8 +290,8 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <h3>Socks</h3>
-                <h5>$11.00</h5>
+                <h3>High Top Shoes</h3>
+                <h5>$74.42</h5>
               </div>
             </div>
           </div>
@@ -285,157 +300,48 @@ function App() {
       <section className="new-products">
         <div className="container">
           <div className="title-box">
-            <h2>New Arrivals</h2>
+            <h2>All Products</h2>
           </div>
           <div className="row">
-            <div className="col-md-3">
-              <div className="product-top">
-                <img src="/images/frida7.png" />
-                <div className="overlay-right">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Quick Shop"
-                  >
-                    <i className="fa fa-eye"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Wishlist"
-                  >
-                    <i className="fa fa-heart-o"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Cart"
-                  >
-                    <i className="fa fa-shopping-cart"></i>
-                  </button>
+            {data.products.map((product) => (
+              <div className="col-md-3">
+                <div className="product-top">
+                  <img src={product.image} />
+                  <div className="overlay-right">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      title="Quick Shop"
+                    >
+                      <i className="fa fa-eye"></i>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      title="Add to Wishlist"
+                    >
+                      <i className="fa fa-heart-o"></i>
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      title="Add to Cart"
+                    >
+                      <i className="fa fa-shopping-cart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="product-bottom text-center">
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
+                  <i className="fa fa-star-half-o"></i>
+                  <h3>{product.name}</h3>
+                  <h5>${product.price}</h5>
                 </div>
               </div>
-              <div className="product-bottom text-center">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star-half-o"></i>
-                <h3>Bronze Earrings</h3>
-                <h5>$13.90</h5>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="product-top">
-                <img src="/images/frida8.png" />
-                <div className="overlay-right">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Quick Shop"
-                  >
-                    <i className="fa fa-eye"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Wishlist"
-                  >
-                    <i className="fa fa-heart-o"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Cart"
-                  >
-                    <i className="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div className="product-bottom text-center">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <h3>Frida Hoodie</h3>
-                <h5>$23.67</h5>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="product-top">
-                <img src="/images/frida9.png" />
-                <div className="overlay-right">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Quick Shop"
-                  >
-                    <i className="fa fa-eye"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Wishlist"
-                  >
-                    <i className="fa fa-heart-o"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Cart"
-                  >
-                    <i className="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div className="product-bottom text-center">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star-o"></i>
-                <h3>Frida Mexico T-shirt</h3>
-                <h5>$14.75</h5>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="product-top">
-                <img src="/images/frida10.png" />
-                <div className="overlay-right">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Quick Shop"
-                  >
-                    <i className="fa fa-eye"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Wishlist"
-                  >
-                    <i className="fa fa-heart-o"></i>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    title="Add to Cart"
-                  >
-                    <i className="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-              <div className="product-bottom text-center">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <h3>Frida Kahlo Keyring</h3>
-                <h5>$6.89</h5>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
