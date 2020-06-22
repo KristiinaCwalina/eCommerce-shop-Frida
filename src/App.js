@@ -133,7 +133,7 @@ function App() {
           <div className="row">
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida3.png" />
+                <img src="/images/frida12.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -164,13 +164,13 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star-half-o"></i>
-                <h3>iPhone Case</h3>
-                <h5>$19.00</h5>
+                <h3>Colorful Cushion cover</h3>
+                <h5>$17.38</h5>
               </div>
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida4.png" />
+                <img src="/images/frida11.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -201,13 +201,13 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <h3>T-shirt</h3>
-                <h5>$25.00</h5>
+                <h3>Frida Kahlo Doll</h3>
+                <h5>$54.88</h5>
               </div>
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida1.png" />
+                <img src="/images/frida13.png" />
                 <div className="overlay-right">
                   <button
                     type="button"
@@ -238,8 +238,8 @@ function App() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star-o"></i>
-                <h3>Agenda 2020</h3>
-                <h5>$35.00</h5>
+                <h3>Frida Kahlo Fabric</h3>
+                <h5>$4.16</h5>
               </div>
             </div>
             <div className="col-md-3">

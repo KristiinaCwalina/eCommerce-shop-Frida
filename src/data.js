@@ -52,6 +52,33 @@ export default {
         image: "/images/frida10.png",
         discount: 0,
         category: "Accessories"
+    },
+    {
+        id:7,
+        name: "Frida Kahlo Doll",
+        price: 54.88,
+        description: "The face of the doll is painted with acrylic paints. The clothes are not removable. Frida doll can be worn like a charm on a bag.",
+        image: "/images/frida11.png",
+        discount: 0,
+        category: "Toys and Games"
+    },
+    {
+        id:8,
+        name: "Colorful Cushion cover",
+        price: 17.38,
+        description: "A very striking portrait,inspired by the Mexican artist , Frida Kahlo, surrounded by brightly coloured Toucans, hibiscuses, beautiful butterflies, daisies, leaves, and many other items of flora and forna. Vividly coloured, including turquoise,orange, yellow,green and blues included.",
+        image: "/images/frida12.png",
+        discount: 0,
+        category: "Home and Living"
+    },
+    {
+        id:9,
+        name: "Frida Kahlo Fabric",
+        price: 4.16,
+        description: "Medium weight linen look and feel fabric sold by meter. Suitable for craft applications, curtains, wall painting, tablecloths, bedspreads, pillowcases, bags and other art or sewing projects. This fabric is a polyester cotton, which means that it hangs beautifully, is easy to wash and crease resistant!",
+        image: "/images/frida13.png",
+        discount: 0,
+        category: "Home and Living"
     }
 ]
 }
