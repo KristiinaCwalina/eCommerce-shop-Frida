@@ -6,6 +6,9 @@ body {
   background-color: #fff;
   font-family: sans-serif;
 }
+#root {
+  height: 100%;
+}
 .top-nav-bar {
   height: 57px;
   top: 0;
@@ -20,6 +23,9 @@ body {
   height: 40px;
   margin: 10px 5px;
   color: #d9238a;
+}
+a:link{
+  text-decoration: none;
 }
 .form-control {
   margin-top: 9px;
