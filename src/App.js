@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route path="/products/:id" component={Products} />
+         
           <Route
             path="/"
             exact
@@ -31,10 +31,20 @@ class App extends Component {
               );
             }}
           />
+          <Route path="/products/:id" component={Products} exact render={
+  ()=>{
+    return(
+      <div>
+      <div><Products/></div>
+      </div>
+     )
+   }
+ }/>
         </div>
       </BrowserRouter>
     );
   }
 }
+
 
 export default App;
