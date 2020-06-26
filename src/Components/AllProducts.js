@@ -19,14 +19,14 @@ function AllProducts (){
                 <button
                   type="button"
                   className="btn btn-secondary"
-                  title="Quick Shop"
+                  title="See Item"
                 >
                   <i className="fa fa-eye"></i>
                 </button>
                 <button
                   type="button"
                   className="btn btn-secondary"
-                  title="Add to Wishlist"
+                  title="Like"
                 >
                   <i className="fa fa-heart-o"></i>
                 </button>

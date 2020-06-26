@@ -6,20 +6,6 @@ function Featured (){
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <img src="/images/frida1.png" />
-          </div>
-          <div className="col-md-4">
-            <img src="/images/frida6.png" />
-          </div>
-          <div className="col-md-4">
-            <img src="/images/frida3.png" />
-          </div>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
             <img src="/images/frida22.png" />
           </div>
           <div className="col-md-4">
