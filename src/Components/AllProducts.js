@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import {Link} from 'react-router-dom';
-import data from '../data';
+import axios from "axios";
 
 function AllProducts (){
-    return <div>   <section className="new-products">
+  const [products, setProduct]=useState([]);
+
+  useEffect (() => {
+    const fetchData  = async ()=> {
+      const {data}=await axios.get ("/products")
+    setProduct(data);
+    }
+    fetchData();
+    return ()=> {
+
+    };
+  },[])
+    return (
+    
+    <div>   <section className="new-products">
     <div className="container">
       <div className="title-box">
         <h2>All Products</h2>
       </div>
       <div className="row">
-        {data.products.map((product) => (
+        {products.map((product) => (
           <div className="col-md-3">
             <div className="product-top">
               <Link to={"/products/" + product.id}>
@@ -45,14 +59,15 @@ function AllProducts (){
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star-half-o"></i>
-              <h3>{product.name}</h3>
-              <h5>${product.price}</h5>
+              <h3>{product.product_name}</h3>
+              <h5>${product.unit_price}</h5>
             </div>
           </div>
         ))}
       </div>
     </div>
   </section></div>
-}
+    );
+};
 
 export default AllProducts;

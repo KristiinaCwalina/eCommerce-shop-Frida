@@ -1,15 +1,24 @@
-import React from "react";
-import data from "../data";
+import React, { useEffect } from "react";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
-import SaleItems from "../Components/SaleItems";
+import { useSelector, useDispatch } from "react-redux";
+import{listProducts} from '../actions/productActions';
 
-function Products(props) {
+function Products (props) {
+  //const [products, setProduct] = useState([]);
   const productId = +props.match.params.id;
+  const product = products.find((p) => p.id === productId);
+  const productList = useSelector(state=> state.productList);
+  const {products, loading, error}=productList;
+  const dispatch = useDispatch();
 
-  const product = data.products.find((p) => p.id === productId);
-
+  useEffect(() => {
+  dispatch(listProducts());
+    return () => {};
+  }, []);
   return (
+    loading? <div>Loading...</div>:
+    error? <div>{error}</div>:
     <div>
       <div>
         <Nav />
@@ -24,36 +33,36 @@ function Products(props) {
             </div>
           </div>
           <div className="col-md-6">
-            <h2>{product.name}</h2>
+            <h2>{products.product_name}</h2>
             <i className="fa fa-star"></i>
             <i className="fa fa-star"></i>
             <i className="fa fa-star"></i>
             <i className="fa fa-star"></i>
             <i className="fa fa-star-half-o"></i>
-            <p className="price">$ {product.price}</p>
-            <p className="description">{product.description}</p>
+            <p className="price">$ {products.unit_price}</p>
+            <p className="description">{products.product_description}</p>
             <ul>
-                Quantity: <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    </select>
+              Quantity:{" "}
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
             </ul>
             <button type="button" className="btn btn-primary">
               Add to Cart
             </button>
-          
           </div>
         </section>
       </div>
-      
+
       <div>
         <Footer />
       </div>
     </div>
   );
-}
+};
 
 export default Products;
