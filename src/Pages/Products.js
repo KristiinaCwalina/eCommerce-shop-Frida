@@ -7,13 +7,11 @@ import { detailsProducts } from "../actions/productActions";
 
 function Products(props) {
   const productDetails = useSelector(state => state.productDetails);
-  const {product, loading, error} = productDetails;
-  
-
+  const {product,loading, error} = productDetails;
+ 
   const dispatch = useDispatch();
 
   useEffect(() => {
-
     dispatch(detailsProducts(props.match.params.id));
    
     return () => {
@@ -26,13 +24,11 @@ function Products(props) {
       <div>
         <Nav />
       </div>
-      {loading ? (
-        <div>Loading...</div>
-      ) : error ? (
-        <div>{error}</div>
-      ) : (
-        <div>
-          
+      {
+        loading? <div>Loading...</div>:
+        error? <div>{error}</div>:
+      <div> 
+         
           <section className="single-product">
             <div className="container">
               <div className="row">
@@ -67,7 +63,7 @@ function Products(props) {
             </div>
           </section>
         </div>
-      )}
+}
 
       <div>
         <Footer />
