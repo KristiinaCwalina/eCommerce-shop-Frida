@@ -16,10 +16,10 @@ catch (error){
 }
 }
 
-export const detailsProducts = (productId) => (dispatch)=>{
+const detailsProducts = (productId) => async (dispatch)=>{
     try{
         dispatch({type: PRODUCT_DETAILS_REQUEST, payload:productId});
-        const {data} =  axios.get ('/products/'+productId);
+        const {data} =  await axios.get (`/products/${productId}`);
         dispatch({type: PRODUCT_DETAILS_SUCCESS, payload:data});
     
 } catch (error){
@@ -27,4 +27,4 @@ export const detailsProducts = (productId) => (dispatch)=>{
 }
 }
 
-export  {listProducts};
+export  {listProducts,detailsProducts};

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 import {listProducts} from '../actions/productActions';
 
-function AllProducts (){
+function AllProducts (props){
   const productList = useSelector(state=> state.productList);
   const {products, loading, error}=productList;
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function AllProducts (){
         {products.map((product) => (
           <div className="col-md-3">
             <div className="product-top">
-              <Link to={"/products/" + product.id}>
+              <Link to={`/products/${product.id}`}>
                 <img src={product.image} />
               </Link>
               <div className="overlay-right">

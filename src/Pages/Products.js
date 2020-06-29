@@ -2,23 +2,25 @@ import React, { useEffect } from "react";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import {detailsProducts} from '../actions/productActions';
+import { detailsProducts } from "../actions/productActions";
 
 
 function Products(props) {
-  const productDetails = useSelector((state) => state.productDetails);
-  const { product,loading, error } = productDetails;
+  const productDetails = useSelector(state => state.productDetails);
+  const {product, loading, error} = productDetails;
   
-  
- //const product = products.find(p=>p.id ===productId);
 
-  
-  
   const dispatch = useDispatch();
+
   useEffect(() => {
+
     dispatch(detailsProducts(props.match.params.id));
-    return () => {};
+   
+    return () => {
+      //
+    };
   }, []);
+ 
   return (
     <div>
       <div>
@@ -30,10 +32,11 @@ function Products(props) {
         <div>{error}</div>
       ) : (
         <div>
+          
           <section className="single-product">
             <div className="container">
               <div className="row">
-              
+           
                 <div className="col-md-5">
                   <img src={product.image} />
                 </div>
@@ -71,6 +74,7 @@ function Products(props) {
       </div>
     </div>
   );
+     
 }
 
 export default Products;
