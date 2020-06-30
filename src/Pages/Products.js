@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState} from "react";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import { useSelector, useDispatch } from "react-redux";
 import { detailsProducts } from "../actions/productActions";
 
 function Products(props) {
+  const [qty, setQty] = useState(1);
   const productDetails = useSelector((state) => state.productDetails);
   const { product, loading, error } = productDetails;
-
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -50,12 +50,16 @@ function Products(props) {
 
               <ul>
                 Quantity:{" "}
-                <select>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <select
+                  value={qty}
+                  onChange={(e) => {
+                    setQty(e.target.value)
+                  }}
+                >
+                  
+                  {[...Array(product.stock).keys()].map(x => 
+                    <option key={x+1} value={x + 1}>{x + 1}</option>
+                  )}
                 </select>
               </ul>
               <button type="button" className="btn btn-primary">
