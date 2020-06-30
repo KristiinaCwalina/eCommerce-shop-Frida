@@ -17,7 +17,9 @@ function Products(props) {
       //
     };
   }, []);
-
+const handleAddToCart = () => {
+  props.history.push("/cart/" + props.match.params.id + "?qty=" + qty)
+}
   return (
     <div>
       <div>
@@ -62,9 +64,12 @@ function Products(props) {
                   )}
                 </select>
               </ul>
-              <button type="button" className="btn btn-primary">
+              {product.stock > 0 ?
+              <button onClick={handleAddToCart} type="button" className="btn btn-primary">
                 Add to Cart
               </button>
+               : 
+               <div className= "outOfStock">OUT OF STOCK</div>}
             </div>
           </section>
         </div>

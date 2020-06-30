@@ -367,3 +367,6 @@ margin-left: 15px;
 .single-product  ul select{
 border-color: #d9238a;
 }
+.outOfStock{
+  color: red;
+}
