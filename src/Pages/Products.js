@@ -4,35 +4,35 @@ import Footer from "../Components/Footer";
 import { useSelector, useDispatch } from "react-redux";
 import { detailsProducts } from "../actions/productActions";
 
-
 function Products(props) {
-  const productDetails = useSelector(state => state.productDetails);
-  const {product,loading, error} = productDetails;
- 
+  const productDetails = useSelector((state) => state.productDetails);
+  const { product, loading, error } = productDetails;
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(detailsProducts(props.match.params.id));
-   
+
     return () => {
       //
     };
   }, []);
- 
+
   return (
     <div>
       <div>
         <Nav />
       </div>
-      {
-        loading? <div>Loading...</div>:
-        error? <div>{error}</div>:
-      <div> 
-         
+
+      {loading ? (
+        <div>Loading...</div>
+      ) : error ? (
+        <div>{error}</div>
+      ) : (
+        <div>
           <section className="single-product">
             <div className="container">
               <div className="row">
-           
                 <div className="col-md-5">
                   <img src={product.image} />
                 </div>
@@ -47,6 +47,7 @@ function Products(props) {
               <i className="fa fa-star-half-o"></i>
               <p className="price">$ {product.unit_price}</p>
               <p className="description">{product.product_description}</p>
+
               <ul>
                 Quantity:{" "}
                 <select>
@@ -63,14 +64,13 @@ function Products(props) {
             </div>
           </section>
         </div>
-}
+      )}
 
       <div>
         <Footer />
       </div>
     </div>
   );
-     
 }
 
 export default Products;
