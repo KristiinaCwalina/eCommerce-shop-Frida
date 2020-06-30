@@ -8,6 +8,7 @@ import CarouselAndSideMenu from "./Components/CarouselAndSideMenu";
 import Featured from "./Components/Featured";
 import SaleItems from "./Components/SaleItems";
 import AllProducts from "./Components/AllProducts";
+import Cart from "./Pages/Cart";
 
 class App extends Component {
   render() {
@@ -56,6 +57,13 @@ class App extends Component {
               );
             }}
           />
+          <Route path="cart/:id?" component={Cart}  exact render ={() => {
+            return (
+              <div>
+              <div><Cart/></div>
+              </div>
+            );}}
+              />
         </div>
       </BrowserRouter>
     );
