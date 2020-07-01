@@ -12,7 +12,7 @@ function SaleItems() {
           <div className="row">
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida12.png" />
+                <img src="/images/frida12.png" alt="frida"/>
 
                 <div className="overlay-right">
                   <button
@@ -50,7 +50,7 @@ function SaleItems() {
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida14.png" />
+                <img src="/images/frida14.png" alt="frida" />
 
                 <div className="overlay-right">
                   <button
@@ -88,7 +88,7 @@ function SaleItems() {
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida17.png" />
+                <img src="/images/frida17.png" alt="frida"/>
 
                 <div className="overlay-right">
                   <button
@@ -126,7 +126,7 @@ function SaleItems() {
             </div>
             <div className="col-md-3">
               <div className="product-top">
-                <img src="/images/frida25.png" />
+                <img src="/images/frida25.png" alt="frida"/>
                 <div className="overlay-right">
                   <button
                     type="button"

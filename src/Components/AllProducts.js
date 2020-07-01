@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { listProducts } from "../actions/productActions";
@@ -28,7 +28,7 @@ function AllProducts(props) {
               <div className="col-md-3">
                 <div className="product-top">
                   <Link to={`/products/${product.id}`}>
-                    <img src={product.image} />
+                    <img src={product.image} alt="product" />
                   </Link>
                   <div className="overlay-right">
                     <button

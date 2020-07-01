@@ -57,12 +57,7 @@ class App extends Component {
               );
             }}
           />
-          <Route path="cart/:id?" component={Cart}  exact render ={() => {
-            return (
-              <div>
-              <div><Cart/></div>
-              </div>
-            );}}
+          <Route path="/cart/:id?" component={Cart} 
               />
         </div>
       </BrowserRouter>

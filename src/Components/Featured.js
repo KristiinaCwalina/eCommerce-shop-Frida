@@ -6,13 +6,13 @@ function Featured (){
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <img src="/images/frida22.png" />
+            <img src="/images/frida22.png" alt="frida" />
           </div>
           <div className="col-md-4">
-            <img src="/images/frida19.png" />
+            <img src="/images/frida19.png" alt="frida" />
           </div>
           <div className="col-md-4">
-            <img src="/images/frida23.png" />
+            <img src="/images/frida23.png" alt="frida" />
           </div>
         </div>
       </div>

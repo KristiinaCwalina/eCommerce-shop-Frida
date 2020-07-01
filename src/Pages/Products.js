@@ -36,7 +36,7 @@ const handleAddToCart = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-5">
-                  <img src={product.image} />
+                  <img src={product.image} alt="product"/>
                 </div>
               </div>
             </div>
