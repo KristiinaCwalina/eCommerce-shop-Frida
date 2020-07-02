@@ -1,4 +1,4 @@
-import React, { useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import { useSelector, useDispatch } from "react-redux";
@@ -17,9 +17,9 @@ function Products(props) {
       //
     };
   }, []);
-const handleAddToCart = () => {
-  props.history.push("/cart/" + props.match.params.id + "?qty=" + qty)
-}
+  const handleAddToCart = () => {
+    props.history.push("/cart/" + props.match.params.id + "?qty=" + qty);
+  };
   return (
     <div>
       <div>
@@ -36,7 +36,7 @@ const handleAddToCart = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-5">
-                  <img src={product.image} alt="product"/>
+                  <img src={product.image} alt="product" />
                 </div>
               </div>
             </div>
@@ -55,21 +55,27 @@ const handleAddToCart = () => {
                 <select
                   value={qty}
                   onChange={(e) => {
-                    setQty(e.target.value)
+                    setQty(e.target.value);
                   }}
                 >
-                  
-                  {[...Array(product.stock).keys()].map(x => 
-                    <option key={x+1} value={x + 1}>{x + 1}</option>
-                  )}
+                  {[...Array(product.stock).keys()].map((x) => (
+                    <option key={x + 1} value={x + 1}>
+                      {x + 1}
+                    </option>
+                  ))}
                 </select>
               </ul>
-              {product.stock > 0 ?
-              <button onClick={handleAddToCart} type="button" className="btn btn-primary">
-                Add to Cart
-              </button>
-               : 
-               <div className= "outOfStock">OUT OF STOCK</div>}
+              {product.stock > 0 ? (
+                <button
+                  onClick={handleAddToCart}
+                  type="button"
+                  className="btn btn-primary"
+                >
+                  Add to Cart
+                </button>
+              ) : (
+                <div className="outOfStock">OUT OF STOCK</div>
+              )}
             </div>
           </section>
         </div>
