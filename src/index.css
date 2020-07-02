@@ -364,9 +364,28 @@ margin-left: 15px;
   border: none;
   margin-top: 10px;
 }
+
 .single-product  ul select{
 border-color: #d9238a;
 }
 .outOfStock{
   color: red;
 }
+
+  .btn-block {
+  background: #03adb2;
+}
+.cart-li {
+  list-style: none;
+}
+.display-5{
+  margin-bottom: 30px;
+  margin-left: 30px;
+  color: #d9238a;
+  font-weight: bold;
+}
+.py-5 {
+  padding-top: 30px !important;
+}
+
+
