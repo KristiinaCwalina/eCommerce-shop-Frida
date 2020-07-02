@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { addToCart } from "../actions/cartActions";
+import { addToCart,removeFromCart } from "../actions/cartActions";
 import { useDispatch, useSelector } from "react-redux";
+
 
 function Cart(props) {
   const cart = useSelector((state) => state.cart);
@@ -10,6 +11,9 @@ function Cart(props) {
     ? Number(props.location.search.split("=")[1])
     : 1;
   const dispatch = useDispatch();
+  const removeFromCartHandler = (productId)=> {
+      dispatch(removeFromCart(productId))
+  }
   useEffect(() => {
     if (productId) {
       dispatch(addToCart(productId, qty));
@@ -71,9 +75,9 @@ function Cart(props) {
                       </strong>
                     </td>
                     <td className="border-0 align-middle">
-                      <a href="#" className="text-dark">
+                      <button type="button" className="text-dark" onClick={()=>removeFromCartHandler(item.product)}>
                         <i className="fa fa-trash"></i>
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 </tbody>
