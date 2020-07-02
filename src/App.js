@@ -57,8 +57,7 @@ class App extends Component {
               );
             }}
           />
-          <Route path="/cart/:id?" component={Cart} 
-              />
+          <Route path="/cart/:id?" component={Cart} />
         </div>
       </BrowserRouter>
     );

@@ -43,7 +43,7 @@ function SaleItems() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <i className="fa fa-star-half-o"></i>
+                <i className="fa fa-star"></i>
                 <h3>Colorful Cushion cover</h3>
                 <h5>$17.38</h5>
               </div>
@@ -119,7 +119,7 @@ function SaleItems() {
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
-                <i className="fa fa-star-o"></i>
+                <i className="fa fa-star"></i>
                 <h3> Frida AirPod Case</h3>
                 <h5>$10.51</h5>
               </div>
