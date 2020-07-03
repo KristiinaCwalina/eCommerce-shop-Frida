@@ -9,6 +9,7 @@ import Featured from "./Components/Featured";
 import SaleItems from "./Components/SaleItems";
 import AllProducts from "./Components/AllProducts";
 import Cart from "./Pages/Cart";
+import SignIn from "./Pages/SignIn";
 
 class App extends Component {
   render() {
@@ -58,6 +59,7 @@ class App extends Component {
             }}
           />
           <Route path="/cart/:id?" component={Cart} />
+          <Route path="/signin" component={SignIn}/>
         </div>
       </BrowserRouter>
     );

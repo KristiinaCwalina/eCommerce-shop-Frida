@@ -33,7 +33,7 @@ function Nav (){
             </li>
 
             <li>
-              <a href="#">Log In</a>
+              <Link to="/signin">Log In</Link>
             </li>
           </ul>
         </div>
