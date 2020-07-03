@@ -27,9 +27,9 @@ function Nav (){
         <div className="menu-bar">
           <ul>
             <li>
-              <a href="#">
+              <Link to="/cart/:id?">
                 <i className="fa fa-shopping-cart"></i>Cart
-              </a>
+              </Link>
             </li>
 
             <li>
