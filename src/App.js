@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import Products from "./Pages/Products";
@@ -11,8 +11,10 @@ import AllProducts from "./Components/AllProducts";
 import Cart from "./Pages/Cart";
 import SignIn from "./Pages/SignIn";
 
-class App extends Component {
-  render() {
+
+function App (){
+ 
+  
     return (
       <BrowserRouter>
         <div>
@@ -64,6 +66,6 @@ class App extends Component {
       </BrowserRouter>
     );
   }
-}
+
 
 export default App;

@@ -46,7 +46,7 @@ function Products(props) {
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
-              <i className="fa fa-star-half-o"></i>
+              <i className="fa fa-star"></i>
               <p className="price">$ {product.unit_price}</p>
               <p className="description">{product.product_description}</p>
 
